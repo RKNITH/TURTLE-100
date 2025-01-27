@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometric Pattern Drawer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <select id="shape">
+        <option value="square">Square</option>
+        <option value="triangle">Triangle</option>
+        <option value="circle">Circle</option>
+        <option value="star">Star</option>
+      </select>
+      <input type="color" id="color" value="#ff0000">
+      <input type="number" id="size" value="50" min="10" max="200">
+      <button id="clear">Clear Canvas</button>
+    </div>
+    <canvas id="canvas"></canvas>
+  </div>
+  <script type="module" src="turtle.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

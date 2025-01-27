@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abstract Art Creator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="controls">
+    <button id="generate">Generate New Art</button>
+    <button id="save">Save as PNG</button>
+    <div class="sliders">
+      <div>
+        <label for="complexity">Complexity:</label>
+        <input type="range" id="complexity" min="3" max="20" value="8">
+      </div>
+      <div>
+        <label for="colorfulness">Colorfulness:</label>
+        <input type="range" id="colorfulness" min="1" max="100" value="50">
+      </div>
+    </div>
+  </div>
+  
+  <div class="canvas-container">
+    <canvas id="artCanvas"></canvas>
+  </div>
+
+  <script type="module" src="art-generator.js"></script>
+</body>
+</html>

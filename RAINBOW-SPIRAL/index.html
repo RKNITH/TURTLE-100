@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>Rainbow Spiral Generator</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #111;
+      font-family: system-ui, sans-serif;
+    }
+    
+    .controls {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .controls label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    canvas {
+      border: 1px solid #333;
+    }
+
+    button {
+      background: #444;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    button:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <label>
+      Steps: <input type="range" id="steps" min="50" max="500" value="200">
+    </label>
+    <label>
+      Step Size: <input type="range" id="stepSize" min="1" max="20" value="5">
+    </label>
+    <label>
+      Turn Angle: <input type="range" id="angle" min="1" max="180" value="60">
+    </label>
+    <button id="draw">Draw New Spiral</button>
+    <button id="animate">Animate</button>
+  </div>
+  <canvas id="canvas"></canvas>
+  <script type="module" src="turtle.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

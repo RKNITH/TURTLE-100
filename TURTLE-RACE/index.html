@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Turtle Race</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Turtle Race</h1>
+    <div class="track">
+      <svg id="raceTrack" width="800" height="400">
+        <!-- Finish line -->
+        <line x1="750" y1="0" x2="750" y2="400" stroke="red" stroke-width="2"/>
+        <text x="755" y="20" fill="red">Finish!</text>
+        
+        <!-- Race lanes -->
+        <line x1="50" y1="100" x2="800" y2="100" stroke="#ccc" stroke-width="1"/>
+        <line x1="50" y1="200" x2="800" y2="200" stroke="#ccc" stroke-width="1"/>
+        <line x1="50" y1="300" x2="800" y2="300" stroke="#ccc" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="controls">
+      <button id="startRace">Start Race!</button>
+      <button id="resetRace">Reset</button>
+    </div>
+    <div id="winner"></div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

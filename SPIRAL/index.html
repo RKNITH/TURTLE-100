@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spiral Pattern Designer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <h1>Spiral Pattern Designer</h1>
+      <div class="control-group">
+        <label for="angle">Angle Step:</label>
+        <input type="range" id="angle" min="1" max="180" value="45">
+        <span id="angleValue">45°</span>
+      </div>
+      <div class="control-group">
+        <label for="size">Step Size:</label>
+        <input type="range" id="size" min="1" max="20" value="5">
+        <span id="sizeValue">5</span>
+      </div>
+      <div class="control-group">
+        <label for="iterations">Iterations:</label>
+        <input type="range" id="iterations" min="10" max="500" value="100">
+        <span id="iterationsValue">100</span>
+      </div>
+      <div class="control-group">
+        <label for="color">Color:</label>
+        <input type="color" id="color" value="#00ff00">
+      </div>
+      <button id="draw">Draw Spiral</button>
+      <button id="clear">Clear Canvas</button>
+    </div>
+    <canvas id="turtleCanvas"></canvas>
+  </div>
+  <script type="module" src="turtle.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mandala Art Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mandala Art Generator</h1>
+    <div class="controls">
+      <label>Number of Petals: <input type="range" id="petals" min="4" max="32" value="8"></label>
+      <label>Size: <input type="range" id="size" min="50" max="200" value="100"></label>
+      <label>Line Width: <input type="range" id="lineWidth" min="1" max="5" value="2"></label>
+      <button id="generate">Generate New Mandala</button>
+      <button id="download">Download SVG</button>
+    </div>
+    <div id="canvas"></div>
+  </div>
+  <script type="module" src="turtle.js"></script>
+  <script type="module" src="mandala.js"></script>
+</body>
+</html>
